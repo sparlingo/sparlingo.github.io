@@ -1,0 +1,27 @@
+{
+    "name:": "sparlingo.github.io",
+    "version": "0.1.0",
+    "description": "Yes please",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/sparlingo/sparling.github.io.git"
+    },
+    "keywords": [
+        "keywords"
+    ],
+    "author": "Kevin Sparling",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/sparlingo/blog/issues"
+    },
+    "homepage": "https://github.com/sparling/blog/#readme",
+    "devDependencies": {
+        "autoprefixer": "^9.4.2",
+        "postcss-import": "^12.0.1",
+        "postcss-loader": "^3.0.0"
+    },
+    "dependencies": {
+        "bulma": "^0.7.5",
+        "markdown-it": "^8.4.2"
+    }
+}
