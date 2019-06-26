@@ -1,5 +1,3 @@
 ---
-title: Welcome to My Blog!
+title: Welcome to sparlingo.github.io
 ---
-
-Lorem ipesueoru jewljr ouewrn kfe kherkher eror eronnvew yeiruewkhr eryrer  hewrhr khekhr 
