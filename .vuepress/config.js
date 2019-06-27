@@ -4,7 +4,11 @@ module.exports = {
     head: [
         ['link', {rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css'}]
     ],
-    sidebar: [
-        ["/", "Home"]
-    ]
+    theme: '@vuepress/blog',
+    themeConfig: {
+        nav: [
+            { text: 'Home', link: '/' },
+            { text: 'Blog', link: '/blog' },
+        ]
+    }
 }

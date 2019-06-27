@@ -1,6 +1,6 @@
 <template>
     <div>
-        <section class="hero is-bold is-medium is-primary">
+        <section class="hero is-bold is-link is-medium">
             <div class="hero-body">
                 <div class="container">
                     <h1 class="title">{{ $page.frontmatter.title }}</h1>
@@ -10,11 +10,11 @@
         </section>
 
         <section class="projects">
-            <div class="columns is-3">
+            <div class="columns is-2">
                 <div class="card column is-one-third">
                     <div class="card-image">
                         <figure class="image is-4by3">
-                            <img src="https://bulma.io/images/placeholders/640x480.png" alt="Placeholder image">
+                            <img src="/ruxin.jpg" alt="Placeholder image">
                         </figure>
                     </div>
                     <div class="card-content">
@@ -112,13 +112,7 @@
         <section class="content">
             <Content />
         </section>
-        <!-- <div class="articles">
-            <article class="post section" v-for="post in posts">
-                <h2 class="subtitle is-4">{{ post.title }}</h2>
-                <p>{{ post.frontmatter.description }}</p>
-                <a :href="post.path">Read More →</a>
-            </article>
-        </div> -->
+        
         <footer class="footer">
             <div class="content has-text-centered">
                 <p>
