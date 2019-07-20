@@ -1,7 +1,7 @@
 ---
 title: My academic desires
 date: 2019-03-27
-categories: Work
+tag: Work
 description: I'm thinking out loud
 ---
 

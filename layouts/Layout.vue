@@ -14,7 +14,7 @@
                 <div class="card column is-one-third">
                     <div class="card-image">
                         <figure class="image is-4by3">
-                            <img src="/ruxin.jpg" alt="Placeholder image">
+                            <img src="https://bulma.io/images/placeholders/640x480.png" alt="Placeholder image">
                         </figure>
                     </div>
                     <div class="card-content">

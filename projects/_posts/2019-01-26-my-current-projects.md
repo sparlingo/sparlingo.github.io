@@ -1,7 +1,7 @@
 ---
 title: My current projects
 date: 2019-01-26
-categories: Work
+tag: Work
 description: I'm just listing this for my own use
 ---
 ## My current projects

@@ -2,6 +2,7 @@
     "name:": "sparlingo.github.io",
     "version": "0.1.0",
     "description": "Yes please",
+    "main": "index.js",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/sparlingo/sparling.github.io.git"
@@ -9,6 +10,10 @@
     "keywords": [
         "keywords"
     ],
+    "scripts": {
+        "dev": "vuepress dev projects",
+        "build": "vuepress build projects"
+    },
     "author": "Kevin Sparling",
     "license": "MIT",
     "bugs": {
@@ -16,11 +21,12 @@
     },
     "homepage": "https://github.com/sparling/blog/#readme",
     "devDependencies": {
-        "autoprefixer": "^9.4.2",
+        "autoprefixer": "^9.6.1",
         "postcss-import": "^12.0.1",
         "postcss-loader": "^3.0.0"
     },
     "dependencies": {
+        "@vuepress/plugin-blog": "latest",
         "@vuepress/theme-blog": "^1.2.2",
         "bulma": "^0.7.5",
         "markdown-it": "^8.4.2"
