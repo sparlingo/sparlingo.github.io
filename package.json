@@ -1,34 +1,19 @@
 {
-    "name:": "sparlingo.github.io",
-    "version": "0.1.0",
-    "description": "Yes please",
-    "main": "index.js",
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/sparlingo/sparling.github.io.git"
-    },
-    "keywords": [
-        "keywords"
-    ],
-    "scripts": {
-        "dev": "vuepress dev projects",
-        "build": "vuepress build projects"
-    },
-    "author": "Kevin Sparling",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/sparlingo/blog/issues"
-    },
-    "homepage": "https://github.com/sparling/blog/#readme",
-    "devDependencies": {
-        "autoprefixer": "^9.6.1",
-        "postcss-import": "^12.0.1",
-        "postcss-loader": "^3.0.0"
-    },
-    "dependencies": {
-        "@vuepress/plugin-blog": "latest",
-        "@vuepress/theme-blog": "^1.2.2",
-        "bulma": "^0.7.5",
-        "markdown-it": "^8.4.2"
-    }
+  "name": "sparlingo.github.io",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/sparling/sparlingo.github.io.git",
+  "author": "Kevin Sparling <kevinsparling@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "vuepress dev"
+  },
+  "devDependencies": {
+    "vuepress": "next",
+    "@vuepress/theme-blog": "latest"
+  },
+  "dependencies": {
+    "moment": "^2.24.0",
+    "yaml-front-matter": "^4.0.0"
+  }
 }
