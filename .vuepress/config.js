@@ -2,6 +2,9 @@ module.exports = {
   title: 'sparlingo.github.io',
   description: 'This is my project blog, built with VuePress',
   theme: '@vuepress/theme-blog', // OR shortcut: @vuepress/blog
+  head: [
+    ['link', { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css' }]
+  ],
   themeConfig: {
     /**
      * Ref: https://vuepress-theme-blog.ulivz.com/#modifyblogpluginoptions
@@ -12,9 +15,6 @@ module.exports = {
       blogPlugnOptions.directories.splice(archiveDirectoryClassifierIndex, 1)
       return blogPlugnOptions
     },
-    /**
-     * Ref: https://vuepress-theme-blog.ulivz.com/#nav
-     */
     nav: [
       {
         text: 'Blog',
