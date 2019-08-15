@@ -1,14 +1,23 @@
 <template>
-<div>
-  <table class = "blog-index-list">
-    <tbody>
-      <tr v-for="post in posts">
-        <td>{{ formateDate(post.frontmatter.date) }}</td>
-        <td><router-link :to="post.path">{{ post.frontmatter.title }}</router-link></td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+  <div id="blogIndex" class="container">
+    <div class="card column is-4" v-for="post in posts">
+      <div class="card-content">
+        <p class="title"><router-link :to="post.path">{{ post.frontmatter.title }}</router-link></p>
+      </div>
+      <footer class="card-footer">
+        <p class="card-footer-item">
+          <span>
+            Tags
+          </span>
+        </p>
+        <p class="card-footer-item">
+          <span>
+            {{ formateDate(post.frontmatter.date) }}
+          </span>
+        </p>
+      </footer>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -43,17 +52,8 @@ export default {
 
 
 <style scoped>
-.blog-index-list {
-  display: table;
-  width: 100%;
-  table-layout: auto;
+#blogIndex{
+
 }
-.blog-index-list td {
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.blog-index-list td:first-child {
-  width: 1px;
-  white-space: nowrap;
-}
+
 </style>

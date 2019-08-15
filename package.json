@@ -9,11 +9,11 @@
     "start": "vuepress dev"
   },
   "devDependencies": {
-    "@vuepress/theme-blog": "latest",
+    "@vuepress/theme-blog": "^1.2.3",
     "node-sass": "^4.12.0",
     "pug": "^2.0.4",
     "pug-plain-loader": "^1.0.0",
-    "sass-loader": "^7.1.0",
+    "sass-loader": "^7.2.0",
     "vuepress": "next"
   },
   "dependencies": {
