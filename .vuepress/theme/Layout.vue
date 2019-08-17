@@ -1,7 +1,9 @@
 <template>
     <div class="theme-container">
         <Navbar/>
-        <Content/>
+        <section class="content">
+            <Content/>
+        </section>
         <Footer/>
     </div>
 </template>

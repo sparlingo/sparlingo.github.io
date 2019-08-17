@@ -3,7 +3,8 @@ module.exports = {
   description: 'These are my projects, I hope you find them useful',
   //theme: '@vuepress/blog', // OR shortcut: @vuepress/blog
   head: [
-    ['link', { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css' }]
+    ['link', { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css' }],
+    ['link', { rel: 'stylesheet', href: 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' }]
   ],
   plugins: [
     [

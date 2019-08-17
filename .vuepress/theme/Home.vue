@@ -1,9 +1,9 @@
 <template>
   <div class="theme-container">
     <Navbar/>
-    <h1 class="page-title">{{$site.title}}</h1>
-    <h2 class="page-subtitle"> {{$site.themeConfig.shortBio}} </h2>
-    <Content/>
+    <section class="blogs">
+      <PostIndex/>
+    </section>
     <Footer/>
   </div>
 

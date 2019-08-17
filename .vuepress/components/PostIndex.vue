@@ -1,21 +1,25 @@
 <template>
   <div id="blogIndex" class="container">
-    <div class="card column is-4" v-for="post in posts">
-      <div class="card-content">
-        <p class="title"><router-link :to="post.path">{{ post.frontmatter.title }}</router-link></p>
-      </div>
-      <footer class="card-footer">
-        <p class="card-footer-item">
-          <span>
-            Tags
-          </span>
-        </p>
-        <p class="card-footer-item">
+    <h1 class="title is-2">My recent blog posts</h1>
+    <div class="blogRow has-text-centered" v-for="post in posts">
+      <div class="columns">
+        <div class="column is-one-fifth is-inline">
+          <a href="" class="button is-small is-rounded is-dark">
+            <span class="icon">
+              <i class="fa fa-hashtag"></i>
+            </span>
+            <span>{{post.frontmatter.tag}}</span>
+          </a>
+        </div>
+        <div id="dateField" class="column is-one-fifth has-text-grey-light">
           <span>
             {{ formateDate(post.frontmatter.date) }}
           </span>
-        </p>
-      </footer>
+        </div>
+        <div class="column">
+          <router-link :to="post.path">{{ post.frontmatter.title }}</router-link>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -52,7 +56,15 @@ export default {
 
 
 <style scoped>
-#blogIndex{
+#blogIndex {
+  padding-top: 100px;
+}
+
+.blogRow {
+
+}
+
+#dateField {
 
 }
 
