@@ -20,5 +20,12 @@ module.exports = {
         ]
       }
     ]
-  ]
+  ],
+  themeConfig: {
+    nav: [
+      { text: 'Home', link: '/' },
+      { text: 'My Blog', link: '/blog' },
+      { text: 'Projects', link: '/projects' },
+    ]
+  }
 }

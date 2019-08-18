@@ -1,9 +1,49 @@
 <template>
-  <nav class="navbar is-info is-fixed-top" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-      <a class="navbar-item" href="https://bulma.io">
-        <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: Free, open source, & modern CSS framework based on Flexbox" width="112" height="28">
-      </a>
+  <section class="hero is-link is-fullheight-with-navbar">
+    <div class="hero-head">
+      <nav class="navbar">
+        <div class="container">
+          <div class="navbar-brand">
+            <a class="navbar-item">
+              sparlingo.github.io
+            </a>
+            <span class="navbar-burger burger" data-target="navbarMenuHeroA">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </div>
+          <div id="navbarMenuHeroA" class="navbar-menu">
+            <div class="navbar-end">
+              <a class="navbar-item is-active">
+                Home
+              </a>
+              <a class="navbar-item">
+                Blog
+              </a>
+              <a class="navbar-item">
+                Projects
+              </a>
+              <span class="navbar-item">
+                <a class="button is-primary is-inverted" href="https://github.com/sparlingo" alt="my github">
+                  <span class="icon">
+                    <i class="fa fa-github"></i>
+                  </span>
+                  <span>My Github</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </nav>
     </div>
-  </nav>
+    <div class="hero-body">
+      <div class="container">
+        <p class="title">
+          My name is Kevin Sparling
+        </p>
+        <p class="subtitle">This is my stuff</p>
+      </div>
+    </div>
+  </section>
 </template>

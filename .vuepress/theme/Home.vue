@@ -1,8 +1,8 @@
 <template>
   <div class="theme-container">
     <Navbar/>
-    <section class="blogs">
-      <PostIndex/>
+    <section class="projects">
+      <Projects/>
     </section>
     <Footer/>
   </div>

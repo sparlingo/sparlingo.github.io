@@ -60,12 +60,5 @@ export default {
   padding-top: 100px;
 }
 
-.blogRow {
-
-}
-
-#dateField {
-
-}
 
 </style>
