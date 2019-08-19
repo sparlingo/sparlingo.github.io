@@ -1,5 +1,5 @@
 <template>
-  <section class="hero is-link is-fullheight-with-navbar">
+  <section class="hero is-link is-medium-with-navbar">
     <div class="hero-head">
       <nav class="navbar">
         <div class="container">
@@ -16,10 +16,10 @@
           <div id="navbarMenuHeroA" class="navbar-menu">
             <div class="navbar-end">
               <a class="navbar-item is-active">
-                Home
+                <router-link to="/">Home</router-link>
               </a>
               <a class="navbar-item">
-                Blog
+                <router-link to="/blog">Blog</router-link>
               </a>
               <a class="navbar-item">
                 Projects
