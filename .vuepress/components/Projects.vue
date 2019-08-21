@@ -85,6 +85,13 @@
 
 <script>
 export default {
+    projectData = {
+        "id": 0,
+        "name": "iZhongWhen",
+        "blurb": "it's a language learning app for the OCD",
+        "content": "A free-to-use Nuxt-based web app for managing your amateurish language learning",
+        "tags": "javascript,web,responsive,vueJS"
+    }
     
 }
 </script>

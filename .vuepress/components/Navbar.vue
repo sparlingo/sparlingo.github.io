@@ -16,10 +16,10 @@
           <div id="navbarMenuHeroA" class="navbar-menu">
             <div class="navbar-end">
               <a class="navbar-item is-active">
-                <router-link to="/">Home</router-link>
+                Home
               </a>
               <a class="navbar-item">
-                <router-link to="/blog">Blog</router-link>
+                Blog
               </a>
               <a class="navbar-item">
                 Projects
