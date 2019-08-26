@@ -6,7 +6,6 @@
     </section>
     <Footer/>
   </div>
-
 </template>
 
 <script>

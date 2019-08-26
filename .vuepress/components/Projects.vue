@@ -1,7 +1,8 @@
 <template>
     <div class="container">
         <div id="projectList" class="columns is-3">
-            <div class="card column is-4">
+            
+             <div class="card column is-4">
                 <div class="card-image">
                     <figure class="image is-4by3">
                     <img src="https://bulma.io/images/placeholders/640x480.png" alt="Placeholder image">
@@ -85,14 +86,36 @@
 
 <script>
 export default {
-    projectData = {
-        "id": 0,
-        "name": "iZhongWhen",
-        "blurb": "it's a language learning app for the OCD",
-        "content": "A free-to-use Nuxt-based web app for managing your amateurish language learning",
-        "tags": "javascript,web,responsive,vueJS"
+    data() {
+        return {
+            projects: [
+                {
+                    "id": 0,
+                    "name": "iZhongWhen",
+                    "blurb": "it's a language learning app for the OCD",
+                    "content": "A free-to-use Nuxt-based web app for managing your amateurish language learning",
+                    "tags": "#javascript,#web,#responsive,#vueJS",
+                    "image": ""
+                },
+                {
+                    "id": 1,
+                    "name": "Munenori",
+                    "blurb": "A web app for Toronto Blue Jays superfans",
+                    "content": "Pick your all time favorite Toronto Blue Jays lineup, face off against other Blue Jays nerds",
+                    "tags": "#web,#responsive,#ios,#android",
+                    "image": ""
+                },
+                {
+                    "id": 2,
+                    "name": "Player Hater",
+                    "blurb": "A multi-platform ultimate frisbee stats app",
+                    "content": "React Native app for iOS and Android to record and organize Ultimate Frisbee player stats",
+                    "tags": "#web,#responsive,#react",
+                    "image": ""
+                }
+            ]    
+        }
     }
-    
 }
 </script>
 
