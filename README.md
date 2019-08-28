@@ -1,8 +1,6 @@
 ---
 layout: Home
-title: this is the title
+title: Home
+hero: true
 ---
 
-
-
-{{$page.frontmatter.title}}
