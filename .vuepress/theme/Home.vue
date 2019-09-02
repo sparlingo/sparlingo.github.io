@@ -1,6 +1,6 @@
 <template>
   <div class="theme-container">
-    <Navbar/>
+    <Navbar />
     <section class="projects">
       <Projects/>
     </section>

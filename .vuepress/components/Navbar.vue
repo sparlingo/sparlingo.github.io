@@ -1,5 +1,5 @@
 <template>
-  <section class="hero is-link is-medium-with-navbar">
+  <section v-if="$page.frontmatter.isHome" class="hero is-link is-fullheight-with-navbar">
     <div class="hero-head">
       <nav class="navbar">
         <div class="container">
@@ -47,3 +47,8 @@
     </div>
   </section>
 </template>
+
+<script>
+
+ 
+</script>

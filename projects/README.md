@@ -1,5 +1,4 @@
 ---
-layout: projectIndex
 title: Projects
 ---
 

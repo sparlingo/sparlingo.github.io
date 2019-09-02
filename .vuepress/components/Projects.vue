@@ -41,7 +41,7 @@ export default {
                     "name": "iZhongWhen",
                     "blurb": "it's a language learning app for the OCD",
                     "content": "A free-to-use Nuxt-based web app for managing your amateurish language learning",
-                    "tags": "#javascript,#web,#responsive,#vueJS",
+                    "tags": "#javascript,#web,#responsive,#vueJS,#tailwind,#feathersJS",
                     "image": ""
                 },
                 {
@@ -49,7 +49,7 @@ export default {
                     "name": "Munenori",
                     "blurb": "A web app for Toronto Blue Jays superfans",
                     "content": "Pick your all time favorite Toronto Blue Jays lineup, face off against other Blue Jays nerds",
-                    "tags": "#web,#responsive,#ios,#android",
+                    "tags": "#web,#responsive,#vueJS,#gridsome",
                     "image": ""
                 },
                 {

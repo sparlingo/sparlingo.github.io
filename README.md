@@ -1,6 +1,6 @@
 ---
 layout: Home
 title: Home
-hero: true
+isHome: true
 ---
 
