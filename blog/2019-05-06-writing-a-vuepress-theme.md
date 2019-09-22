@@ -2,7 +2,7 @@
 title: Writing a Vuepress Theme
 date: 2019-05-06
 tag: vuepress
-
+type: post
 ---
 
 # Writing a VuePress theme

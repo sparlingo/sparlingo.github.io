@@ -40,6 +40,8 @@ export default {
     posts() {
       let posts = this.$site.pages
         .filter(post => !post.frontmatter.blog_index)
+        .filter(post => !post.frontmatter.isHome)
+        .filter(post => !post.path.startsWith('/projects/'))
         .filter(post => !post.path.startsWith('/archived/'))
         .sort((a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date));
 
@@ -57,7 +59,7 @@ export default {
 
 <style scoped>
 #blogIndex {
-  padding-top: 100px;
+  padding-top: 50px;
 }
 
 

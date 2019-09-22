@@ -1,5 +1,6 @@
 ---
 title: My Blog Posts
+blog_index: true
 ---
 
-<PostIndex category="current" limit="5" />
+<PostIndex limit="10" />

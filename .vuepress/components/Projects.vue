@@ -1,8 +1,8 @@
 <template>
     <div class="container">
-        <div id="projectList" class="columns is-3">
+        <div id="projectList" class="columns">
 
-            <div v-for="project in projects" class="card column is-4">
+            <div v-for="project in projects" class="card column is-3">
                 <div class="card-image">
                     <figure class="image is-4by3">
                     <img src="https://bulma.io/images/placeholders/640x480.png" alt="Placeholder image">
@@ -39,26 +39,33 @@ export default {
                 {
                     "id": 0,
                     "name": "iZhongWhen",
-                    "blurb": "it's a language learning app for the OCD",
+                    "blurb": "language learning app for the OCD",
                     "content": "A free-to-use Nuxt-based web app for managing your amateurish language learning",
-                    "tags": "#javascript,#web,#responsive,#vueJS,#tailwind,#feathersJS",
+                    "tags": "#javascript,#responsive,#vueJS",
                     "image": ""
                 },
                 {
                     "id": 1,
                     "name": "Munenori",
-                    "blurb": "A web app for Toronto Blue Jays superfans",
-                    "content": "Pick your all time favorite Toronto Blue Jays lineup, face off against other Blue Jays nerds",
-                    "tags": "#web,#responsive,#vueJS,#gridsome",
+                    "blurb": "An API for Toronto Blue Jays nerds",
+                    "content": "It's very difficult to find APIs for baseball with any type of documentation",
+                    "tags": "#web,#feathersJS,#data",
                     "image": ""
                 },
                 {
                     "id": 2,
                     "name": "Player Hater",
-                    "blurb": "A multi-platform ultimate frisbee stats app",
+                    "blurb": "An ultimate frisbee stats app",
                     "content": "React Native app for iOS and Android to record and organize Ultimate Frisbee player stats",
                     "tags": "#web,#responsive,#react",
                     "image": ""
+                },
+                {
+                    "id": 3,
+                    "name": "BB Barter",
+                    "blurb": "A Blue Jays card game",
+                    "content": "A React app where you can draft a team and go head-to-head with other teams",
+                    "tags": "#web,#responsive,#react"
                 }
             ]    
         }

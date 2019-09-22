@@ -3,6 +3,7 @@ title: My current projects
 date: 2019-01-26
 tag: Work
 description: I'm just listing this for my own use
+type: post
 ---
 ## My current projects
 

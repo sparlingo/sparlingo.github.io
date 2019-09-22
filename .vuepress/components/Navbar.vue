@@ -61,16 +61,14 @@
           </div>
           <div id="navbarMenuHeroA" class="navbar-menu">
             <div class="navbar-end">
-              <div class="navbar-end">
-                <router-link
-                  v-for="nav of $site.themeConfig.nav"
-                  :key="nav.text"
-                  :to="nav.link"
-                  class="navbar-item"
-                >
-                  {{ nav.text }}
-                </router-link>
-              </div>
+              <router-link
+                v-for="nav of $site.themeConfig.nav"
+                :key="nav.text"
+                :to="nav.link"
+                class="navbar-item"
+              >
+                {{ nav.text }}
+              </router-link>
               <span class="navbar-item">
                 <a class="button is-primary is-inverted" href="https://github.com/sparlingo" alt="my github">
                   <span class="icon">
