@@ -6,14 +6,13 @@
   "author": "Kevin Sparling <kevinsparling@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "vuepress dev"
+    "start": "vuepress dev",
+    "build": "vuepress build"
   },
   "devDependencies": {
     "node-sass": "^4.12.0",
-    "pug": "^2.0.4",
-    "pug-plain-loader": "^1.0.0",
     "sass-loader": "^7.2.0",
-    "vuepress": "next"
+    "vuepress": "^1.1.0"
   },
   "dependencies": {
     "moment": "^2.24.0",
