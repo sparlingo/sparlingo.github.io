@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Markdown Slot | sparlingo.github.io</title>
+    <meta name="description" content="Markdown cheatsheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="preload" href="/assets/css/0.styles.7cc26fe9.css" as="style"><link rel="preload" href="/assets/js/app.09fc09ac.js" as="script"><link rel="preload" href="/assets/js/9.cb88c429.js" as="script"><link rel="preload" href="/assets/js/7.8832fc48.js" as="script"><link rel="preload" href="/assets/js/15.56ff10b9.js" as="script"><link rel="preload" href="/assets/js/4.2e6818bf.js" as="script"><link rel="prefetch" href="/assets/js/10.cd8cdfc9.js"><link rel="prefetch" href="/assets/js/11.b6cbf479.js"><link rel="prefetch" href="/assets/js/12.5f6e4748.js"><link rel="prefetch" href="/assets/js/13.67859df1.js"><link rel="prefetch" href="/assets/js/14.35447fef.js"><link rel="prefetch" href="/assets/js/16.1dcb5179.js"><link rel="prefetch" href="/assets/js/17.9af8e408.js"><link rel="prefetch" href="/assets/js/18.726de7b2.js"><link rel="prefetch" href="/assets/js/19.39ce5076.js"><link rel="prefetch" href="/assets/js/2.ceb25f18.js"><link rel="prefetch" href="/assets/js/20.d75c3dbc.js"><link rel="prefetch" href="/assets/js/21.ff8d3414.js"><link rel="prefetch" href="/assets/js/3.b11d8a7e.js"><link rel="prefetch" href="/assets/js/5.fd30df29.js"><link rel="prefetch" href="/assets/js/6.a493bfbe.js"><link rel="prefetch" href="/assets/js/8.1e16c5a8.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.7cc26fe9.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><section class="hero is-link is-medium-with-navbar"><div class="hero-head"><nav class="navbar"><div class="container"><div class="navbar-brand"><a class="navbar-item">
+            sparlingo.github.io
+          </a> <span data-target="navbarMenuHeroA" class="navbar-burger burger"><span></span> <span></span> <span></span></span></div> <div id="navbarMenuHeroA" class="navbar-menu"><div class="navbar-end"><a href="/" class="navbar-item router-link-active">
+              Home
+            </a><a href="/blog" class="navbar-item router-link-active">
+              My Blog
+            </a><a href="/projects" class="navbar-item">
+              Projects
+            </a> <span class="navbar-item"><a href="https://github.com/sparlingo" alt="my github" class="button is-primary is-inverted"><span class="icon"><i class="fa fa-github"></i></span> <span>My Github</span></a></span></div></div></div></nav></div> <div class="hero-body"><div class="container"><p class="title">
+        My name is Kevin Sparling
+      </p> <p class="subtitle">This is my stuff</p></div></div></section> <section class="content"><div class="content__default"><h1 id="markdown-slot"><a href="#markdown-slot" aria-hidden="true" class="header-anchor">#</a> Markdown Slot</h1> <p>VuePress implements a content distribution API for Markdown. With this feature, you can split your document into multiple fragments to facilitate flexible composition in the layout component.</p> <h2 id="why-do-i-need-markdown-slot"><a href="#why-do-i-need-markdown-slot" aria-hidden="true" class="header-anchor">#</a> Why do I need Markdown Slot?</h2> <p>First, let's review the relationship between layout components and markdown files:</p> <diagram-markdown-slot-relationship></diagram-markdown-slot-relationship> <p>Markdown files are providers of metadata (Page content, Configuration, etc.), while layout components consume them. We can use <code>frontmatter</code> to define some metadata for common data types, but <code>frontmatter</code> is hard to do something about markdown / HTML, a complex metadata that involves differences before and after compilation.</p> <p>Markdown Slot is to solve this kind of problem.</p> <h2 id="named-slots"><a href="#named-slots" aria-hidden="true" class="header-anchor">#</a> Named Slots</h2> <p>You can define a named markdown slot through the following markdown syntax:</p> <div class="language-md extra-class"><pre class="language-md"><code>::: slot name
+
+:::
+</code></pre></div><p>Use the <code>Content</code> component to use the slot in the layout component:</p> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Content</span> <span class="token attr-name">slot-key</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>name<span class="token punctuation">&quot;</span></span><span class="token punctuation">/&gt;</span></span>
+</code></pre></div><p>::: tip
+Here we are using <code>slot-key</code> instead of <code>slot</code>, because in Vue, <code>slot</code> is a reserved prop name.
+:::</p> <h2 id="default-slot-content"><a href="#default-slot-content" aria-hidden="true" class="header-anchor">#</a> Default Slot Content</h2> <p>By default, the slot-free part of a markdown file becomes the default content of a markdown slot, which you can access directly using the <code>Content</code> component:</p> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Content</span><span class="token punctuation">/&gt;</span></span>
+</code></pre></div><h2 id="example"><a href="#example" aria-hidden="true" class="header-anchor">#</a> Example</h2> <p>Suppose your layout component is as follows:</p> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>container<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>header</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Content</span> <span class="token attr-name">slot-key</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>header<span class="token punctuation">&quot;</span></span><span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>header</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>main</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Content</span><span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>main</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>footer</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Content</span> <span class="token attr-name">slot-key</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>footer<span class="token punctuation">&quot;</span></span><span class="token punctuation">/&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>footer</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>If the markdown content of a page is like this:</p> <div class="language-md extra-class"><pre class="language-md"><code>::: slot header
+<span class="token title important"><span class="token punctuation">#</span> Here might be a page title</span>
+:::
+
+<span class="token list punctuation">-</span> A Paragraph
+<span class="token list punctuation">-</span> Another Paragraph
+
+::: slot footer
+Here's some contact info
+:::
+</code></pre></div><p>Then the rendered HTML of this page will be:</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>container<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>header</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>content header<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span>Here might be a page title<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>header</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>main</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>content default<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>A Paragraph<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>Another Paragraph<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>main</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>footer</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>content footer<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>Here's some contact info<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>footer</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>Note that:</p> <ol><li>Unlike the slot mechanism provided by <a href="https://vuejs.org/v2/guide/components-slots.html" target="_blank" rel="noopener noreferrer">Vue<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> itself, each content distribution is wrapped in a <code>div</code> whose class is <code>content</code> with the name of the slot.</li> <li>Please ensure the uniqueness of the slot defined.</li></ol></div></section> <footer data-v-2821ba28><div class="has-text-centered" data-v-2821ba28>
+        MIT Licensed; By Kevin Sparling; Help from Vuepress
+    </div></footer></div><div class="global-ui"><div class="cat-container" data-v-a13867c0><canvas id="vuepress-cat" width="280" height="250" class="live2d" data-v-a13867c0></canvas></div></div></div>
+    <script src="/assets/js/app.09fc09ac.js" defer></script><script src="/assets/js/9.cb88c429.js" defer></script><script src="/assets/js/7.8832fc48.js" defer></script><script src="/assets/js/15.56ff10b9.js" defer></script><script src="/assets/js/4.2e6818bf.js" defer></script>
+  </body>
+</html>
