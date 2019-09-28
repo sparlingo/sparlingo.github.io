@@ -1,8 +1,8 @@
 <template>
   <div class="theme-container">
-    <Navbar isHome></Navbar>
+    <Navbar isHome />
     <section class="projects">
-      <Projects/>
+      <ProjectIndex />
     </section>
     <Footer/>
   </div>

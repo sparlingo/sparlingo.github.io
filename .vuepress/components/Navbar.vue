@@ -1,5 +1,5 @@
 <template>
-  <section v-if="isHome" class="hero is-link is-fullheight-with-navbar">
+  <section v-if="isHome" class="hero is-link is-bold is-large">
     <div class="hero-head">
       <nav class="navbar">
         <div class="container">
@@ -45,7 +45,7 @@
       </div>
     </div>
   </section>
-  <section v-else class="hero is-link is-medium-with-navbar">
+  <section v-else class="hero is-link is-bold is-medium-with-navbar">
     <div class="hero-head">
       <nav class="navbar">
         <div class="container">
