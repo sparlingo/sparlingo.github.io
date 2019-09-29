@@ -8,17 +8,6 @@ module.exports = {
   plugins: [
     [
       "vuepress-plugin-cat"
-      // '@vuepress/blog', {
-      //   directories: [
-      //     {
-      //       id: 'post',
-      //       dirname: '_posts',
-      //       path: '/blog',
-      //       // layout: 'PostIndex',
-      //       // itemLayout: 'Post',
-      //     },
-      //   ]
-      // }
     ]
   ],
   themeConfig: {
@@ -27,5 +16,7 @@ module.exports = {
       { text: 'My Blog', link: '/blog' },
       { text: 'Projects', link: '/projects' },
     ]
+  },
+  projectConfig: {
   }
 }

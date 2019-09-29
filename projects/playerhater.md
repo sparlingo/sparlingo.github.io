@@ -1,0 +1,6 @@
+---
+title: Player Hater
+---
+
+# playerHater
+
