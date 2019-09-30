@@ -1,5 +1,3 @@
----
-title: Blue Bird Barter
----
-
-# Blue Bird Barter
+::: slot title
+Blue Bird Barter
+:::

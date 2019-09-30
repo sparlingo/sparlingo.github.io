@@ -1,5 +1,3 @@
----
-title: Munenori
----
-
-# Munenori
+::: slot title
+Munenori
+:::

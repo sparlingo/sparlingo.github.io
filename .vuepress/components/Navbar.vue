@@ -5,7 +5,7 @@
         <div class="container">
           <div class="navbar-brand">
             <a class="navbar-item">
-              sparlingo.github.io
+                sparlingo.github.io
             </a>
             <span class="navbar-burger burger" data-target="navbarMenuHeroA">
               <span></span>

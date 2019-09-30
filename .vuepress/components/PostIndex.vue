@@ -1,28 +1,31 @@
 <template>
   <div id="blogIndex" class="container">
-    <h1 class="title is-2">My recent blog posts</h1>
-    <div class="blogRow has-text-centered" v-for="post in posts">
-      <div class="columns">
-        <div class="column is-one-fifth is-inline">
-          <a href="" class="button is-small is-rounded is-dark">
-            <span class="icon">
-              <i class="fa fa-hashtag"></i>
-            </span>
-            <span>{{post.frontmatter.tag}}</span>
-          </a>
-        </div>
-        <div id="dateField" class="column is-one-fifth has-text-grey-light">
-          <span>
-            {{ formateDate(post.frontmatter.date) }}
-          </span>
-        </div>
-        <div class="column">
-          <router-link :to="post.path">{{ post.frontmatter.title }}</router-link>
+    <h1 class="title is-2 has-text-centered">My recent blog posts</h1>
+    <div class="container">
+      <div class="columns is-multiline">
+        <div class="column is-one-third" v-for="post in posts">
+          <div class="card">
+            <div class="card-header">
+              <div class="card-header-title">
+                <h4 class="title is-4 has-text-centered"><router-link :to="post.path">{{ post.frontmatter.title }}</router-link></h4>
+              </div>
+            </div>
+            <div class="card-content">
+              <p>THING</p>
+            </div>
+            <div class="card-footer">
+              <span>Published on: {{ formateDate(post.frontmatter.date) }}</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </template>
+
+<style lang="sass" scoped>
+
+</style>
 
 <script>
 import moment from "moment"

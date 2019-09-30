@@ -1,5 +1,3 @@
----
-title: iZhongWhen
----
-
-# iZhongWhen
+::: slot title
+iZhongWhen
+:::

@@ -1,6 +1,3 @@
----
-title: Player Hater
----
-
-# playerHater
-
+::: slot title
+Player Hater
+:::
