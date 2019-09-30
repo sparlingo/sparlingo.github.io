@@ -2,7 +2,7 @@
 title: My current projects
 date: 2019-01-26
 tag: Work
-description: I'm just listing this for my own use
+description: I'm just listing this for my own use, what projects use what software
 type: post
 ---
 ## My current projects
@@ -11,11 +11,11 @@ I'm going to list my current projects here, this is really just for me to keep e
 
 | Name               | Front-end       | Back-end            | Subject                | Timeline  |
 |--------------------|-----------------|---------------------|------------------------|-----------|
-|sparlingo.github.io |Vuepress         |Markdown             |My projects, positive   |Ongoing    |   
-|sparliang.life      |Ghost            |CMS                  |Personal stuff          |Ongoing    |
+|sparlingo.github.io |Vuepress         |Markdown             |My projects, positive   |Ongoing    |
+|sparliang.life      |Gatsby           |Markdown             |Personal stuff          |Ongoing    |
 |SIP                 |Gatsby           |Markdown, APIs       |Whatever I want         |Ongoing    |
-|chinaIsXYZ          |Expose           |Pictures/videos      |An exposition of China  |2019       |   
-|Kimble              |Nuxt(VueJS)      |Strapi               |Kindergarten Cop        |2019/2020  |
+|chinaIsXYZ          |Expose           |Pictures/videos      |An exposition of China  |2019       |
+|Kimble              |Gridsome(Vue)    |ExpressJS            |Kindergarten Cop        |2019/2020  |
 |Ruxin               |Something        |KeystoneJS           |League Runner           |2020       |
 |Krieger             |React Native     |Sails?               |Ultimate Frisbee stats  |2020       |
 |ksparling.online    |Nuxt(VueJS)      |Lots of stuff        |Run my life             |2020       |

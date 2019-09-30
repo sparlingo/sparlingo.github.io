@@ -5,16 +5,24 @@
       <div class="columns is-multiline">
         <div class="column is-one-third" v-for="post in posts">
           <div class="card">
-            <div class="card-header">
-              <div class="card-header-title">
-                <h4 class="title is-4 has-text-centered"><router-link :to="post.path">{{ post.frontmatter.title }}</router-link></h4>
-              </div>
-            </div>
+            <header class="card-header">
+                <h3 class="card-header-title is-3 has-text-centered">
+                  <router-link :to="post.path">{{ post.frontmatter.title }}</router-link>
+                </h3>
+            </header>
             <div class="card-content">
-              <p>THING</p>
+              <p>{{post.frontmatter.description}}</p>
             </div>
             <div class="card-footer">
-              <span>Published on: {{ formateDate(post.frontmatter.date) }}</span>
+              <p class="card-footer-item">
+                {{ formateDate(post.frontmatter.date) }}
+              </p>
+              <p class="card-footer-item">
+                <span class="icon">
+                  <i class="fa fa-hashtag"></i>
+                  {{post.frontmatter.tag}}
+                </span>
+              </p>
             </div>
           </div>
         </div>
@@ -24,7 +32,14 @@
 </template>
 
 <style lang="sass" scoped>
+header.card-header
+  text-align: centered
 
+card
+  height: 250px
+
+.card-header
+  background-color: #E3E3E3
 </style>
 
 <script>
