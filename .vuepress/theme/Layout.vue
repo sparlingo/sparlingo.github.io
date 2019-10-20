@@ -3,6 +3,7 @@
     <Navbar/>
     <section class="content">
       <Content slot-key="title" />
+      <Content slot-key="headline" />
       <Content/>
     </section>
     <Footer/>
@@ -12,6 +13,6 @@
 <style lang="sass" scoped>
 .content__title 
   text-align: center
-  font-size: 3rem
+  font-size: 2.75rem
   font-weight: 600
 </style>

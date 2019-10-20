@@ -53,7 +53,7 @@ export default {
                 {
                     name: "Munenori",
                     blurb: "An API for Toronto Blue Jays nerds",
-                    content: "It's very difficult to find APIs for baseball with any type of documentation",
+                    content: "A REST interface for Lahman's baseball database",
                     tags: "#web,#javascript,#data",
                     ghLink: "https://github.com/sparlingo/munenori.git",
                     image: "",
@@ -71,7 +71,7 @@ export default {
                 {
                     name: "Blue Bird Barter",
                     blurb: "A Blue Jays card game",
-                    content: "A GatsbyJS app where you can draft a Toronto Blue Jays dream team and go head-to-head with others",
+                    content: "A Nuxt app where you can draft a Toronto Blue Jays dream team and go head-to-head with others",
                     tags: "#web,#responsive,#react",
                     ghLink: "https://github.com/sparlingo/BBB.git",
                     image: "",

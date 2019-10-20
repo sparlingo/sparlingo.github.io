@@ -2,7 +2,7 @@
 title: My current projects
 date: 2019-01-26
 tag: Work
-description: I'm just listing this for my own use, what projects use what software
+description: What projects use what software
 type: post
 ---
 ## My current projects

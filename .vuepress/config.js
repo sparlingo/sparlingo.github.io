@@ -6,9 +6,6 @@ module.exports = {
     ['link', { rel: 'stylesheet', href: 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' }]
   ],
   plugins: [
-    [
-      "vuepress-plugin-cat"
-    ]
   ],
   themeConfig: {
     nav: [
@@ -17,6 +14,6 @@ module.exports = {
       { text: 'Projects', link: '/projects' },
     ]
   },
-  projectConfig: {
+  markdown: {
   }
 }
