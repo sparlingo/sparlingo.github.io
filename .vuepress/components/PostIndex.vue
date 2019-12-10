@@ -1,6 +1,6 @@
 <template>
   <div id="blogIndex" class="container">
-    <h1 class="title is-2 has-text-centered">My recent blog posts</h1>
+    <h1 class="title is-2 has-text-centered">{{ this.title }}</h1>
     <div class="container">
       <div class="columns is-multiline">
         <div class="column is-one-third" v-for="post in posts">
@@ -48,6 +48,7 @@ import moment from "moment"
 export default {
   props: [
     'limit',
+    'title'
   ],
   methods: {
     formateDate(date, format = 'YYYY-MM-DD') {

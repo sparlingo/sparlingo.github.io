@@ -4,6 +4,7 @@ date: 2019-02-26
 tag: markdown
 description: Markdown cheatsheet
 type: post
+layout: Post
 ---
 
 # Markdown Slot

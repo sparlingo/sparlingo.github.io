@@ -4,6 +4,7 @@ date: 2019-01-26
 tag: Work
 description: What projects use what software
 type: post
+layout: Post
 ---
 ## My current projects
 
