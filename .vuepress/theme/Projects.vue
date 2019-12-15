@@ -2,18 +2,16 @@
   <div class="theme-container">
     <Navbar/>
     <section class="projects">
-      <Post />
+      <ProjectIndex />
     </section>
     <Footer/>
   </div>
 </template>
 
-<style lang="sass" scoped>
-
-</style>
-
 <script>
+import ProjectIndex from '../components/ProjectIndex.vue'
+
 export default {
-    
+  components: { ProjectIndex }
 }
 </script>
