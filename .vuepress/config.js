@@ -22,11 +22,6 @@ module.exports = {
           type: 'twitter',
           link: 'https://github.com/kevin_sparling'
         }
-      ],
-      copyright: [
-        {
-          text: 'MIT Licensed |  Copyright © 2018-present'
-        }
       ]
     }
   },
@@ -39,8 +34,10 @@ module.exports = {
             id: 'post',
             dirname: '_posts',
             path: '/blog/',
+            itemLayout: 'Post',
+            itemPermalink: '/:year/:month/:day/:slug',
             pagination: {
-              lengthPerPage: 4,
+              lengthPerPage: 6
             }
           }
         ]

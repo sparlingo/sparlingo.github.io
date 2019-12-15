@@ -3,8 +3,12 @@ title: My academic desires
 date: 2019-03-27
 tag: Work
 description: I'm thinking out loud
-layout: Post
+type: post
 ---
+
+::: slot title
+This is a thing
+:::
 
 I'm wondering again if the things that I'm really interested in: social science, behavioural economics, culture, being
 a contradictory prick, is that really what I should be doing. I'm trying my best to get organized, but I can't seem

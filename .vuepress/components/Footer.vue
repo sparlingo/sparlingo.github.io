@@ -1,7 +1,7 @@
 <template>
     <footer>
         <div class="has-text-centered">
-            MIT Licensed; By Kevin Sparling; Help from Vuepress
+            <p>MIT Licensed; By Kevin Sparling; Help from Vuepress</p>
         </div>
     </footer>
 </template>
@@ -12,6 +12,9 @@ export default {}
 
 <style scoped>
 footer {
-    padding-top: 40px;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #dddddd;
 }
 </style>
