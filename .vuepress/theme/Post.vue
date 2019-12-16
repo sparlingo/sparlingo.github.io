@@ -23,11 +23,12 @@
 
 <script>
 import moment from 'moment'
+
 export default {
   methods: {
     formateDate(date, format = 'YYYY-MM-DD') {
       return moment(date).format(format)
-    },
+    }
   }
 }
 </script>
