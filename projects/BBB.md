@@ -1,3 +1,11 @@
+---
+layout: Project
+tech:
+- javascript
+- VueJS
+- bulma
+---
+
 ::: slot title
 Blue Bird Barter
 :::

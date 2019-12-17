@@ -2,13 +2,15 @@
   <div class="theme-container">
     <Navbar />
     <section class="content">
-      <h1>
-        {{$page.frontmatter.title}}
-      </h1>
-      <h3>
-        {{formateDate($page.frontmatter.date)}}
-      </h3>
-      <Content/>
+      <div class="container">
+        <span>
+          <h1 class="title">
+            {{$page.frontmatter.title}}
+          </h1>
+        </span>
+        </span>
+        <Content/>
+      </div>
     </section>
     <Footer />
   </div>
@@ -19,6 +21,10 @@
   text-align: center
   font-size: 2.75rem
   font-weight: 600
+  padding-bottom: 20px
+
+.header-anchor
+  display: none
 </style>
 
 <script>
