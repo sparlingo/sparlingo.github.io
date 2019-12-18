@@ -1,5 +1,11 @@
 ---
 layout: Project
+techs:
+- javascript
+- expressJS
+- RESTful
+- data
+tldr: "Don't mess around with trying to get baseball player/team stats elsewhere for your web app. This one works"
 ---
 
 ::: slot title

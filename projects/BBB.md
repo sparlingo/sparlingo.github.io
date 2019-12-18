@@ -1,9 +1,11 @@
 ---
 layout: Project
-tech:
+techs:
 - javascript
 - VueJS
 - bulma
+- data
+tldr: "It looks like you're working. There's a setting to turn player pics off. Do it."
 ---
 
 ::: slot title

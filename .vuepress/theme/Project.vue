@@ -9,11 +9,17 @@
               <p class="title"><Content slot-key="title" /></p>
               <p><Content slot-key="headline" /></p>
             </div>
-            <div class="tile is-child box">
-              <p class="buzzwords">What are the buzzwords?</p>
-              <ul>
-                <li v-for="tech in techs">{{tech}}</li>
-              </ul>
+            <div class="tile is-parent box">
+              <div class="tile is-child">
+                <p class="buzzwords">Buzzwords?</p>
+                <ul id="tech">
+                  <li v-for="tech in $frontmatter.techs">#{{ tech }}</li>
+                </ul>
+              </div>
+              <div class="tile is-child">
+                <p class="buzzwords">TLDR;</p>
+                <p>{{$frontmatter.tldr}}</p>
+              </div>
             </div>
           </div>
           <div class="tile is-parent">
@@ -44,17 +50,16 @@
   font-size: 1.25rem
 
 p.buzzwords
-  font-size: 1.75rem
-  font-weight: 600
+  text-align: center
+  font-size: 1.5rem
+  font-weight: 800
+
+#tech li
+  font-size: 1.1rem
 </style>
 
 <script>
 
 export default {
-  computed: {
-    techs() {
-      let techs = this.$frontmatter.techs
-    }
-  }
 }
 </script>
