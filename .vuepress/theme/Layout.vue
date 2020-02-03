@@ -1,5 +1,5 @@
 <template>
-  <div class="theme-container">
+  <div class="wrapper">
     <Navbar/>
     <section class="content">
       <Content slot-key="title" />
@@ -10,9 +10,6 @@
   </div>
 </template>
 
-<style lang="sass" scoped>
-.content__title 
-  text-align: center
-  font-size: 2.75rem
-  font-weight: 600
+<style lang="stylus">
+  @import './styles/theme.styl';
 </style>

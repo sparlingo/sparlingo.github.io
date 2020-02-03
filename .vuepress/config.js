@@ -5,6 +5,11 @@ module.exports = {
     ['link', { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css' }],
     ['link', { rel: 'stylesheet', href: 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' }]
   ],
+  postcss: {
+    postcss: {
+      plugins: [require('tailwindcss')('./tailwind.js'), require('autoprefixer')]
+    }
+  },
   //theme: '@vuepress/blog',
   themeConfig: {
     nav: [
@@ -45,13 +50,5 @@ module.exports = {
     ]
   ],
   markdown: {
-  },
-  chainWebpack: config => {
-    config.module
-      .rule('pug')
-      .test(/\.pug$/)
-      .use('pug-plain-loader')
-        .loader('pug-plain-loader')
-        .end()
   }
 }
