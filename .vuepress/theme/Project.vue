@@ -37,25 +37,8 @@
   </div>
 </template>
 
-<style lang="sass" scoped>
-.container
-  padding-top: 20px
+<style lang="stylus" scoped>
 
-.content__title 
-  text-align: center
-  font-size: 2.75rem
-  font-weight: 800
-
-.content__headline
-  font-size: 1.25rem
-
-p.buzzwords
-  text-align: center
-  font-size: 1.5rem
-  font-weight: 800
-
-#tech li
-  font-size: 1.1rem
 </style>
 
 <script>

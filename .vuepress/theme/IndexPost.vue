@@ -22,25 +22,7 @@
   </div>
 </template>
 
-<style lang="sass" scoped>
-h1
-  text-align: center
-  font-size: 2.75rem
-  font-weight: 600
-  padding-top: 15px
-
-h5
-  font-weight: 400
-
-.subtitle
-  opacity: 60%
-  
-.page-link
-  font: 100% Ubuntu
-  font-size: 1.5rem
-  color: #111111
-
-.post
+<style lang="stylus" scoped>
   
 </style>
 

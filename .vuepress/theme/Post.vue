@@ -16,15 +16,8 @@
   </div>
 </template>
 
-<style lang="sass" scoped>
-.content__title 
-  text-align: center
-  font-size: 2.75rem
-  font-weight: 600
-  padding-bottom: 20px
+<style lang="stylus" scoped>
 
-.header-anchor
-  display: none
 </style>
 
 <script>
