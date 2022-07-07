@@ -16,7 +16,7 @@
     "commander": "2.20.3",
     "elliptic": "^6.5.3",
     "esm": "^3.2.25",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "postcss-import": "^12.0.1",
     "postcss-loader": "^3.0.0",
     "prismjs": "^1.21.0",
